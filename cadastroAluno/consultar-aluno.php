@@ -1,6 +1,6 @@
 <?php
 
-include_once("aula07.php");
+include_once("conexao.php");
 
 $consulta = mysqli_query($conexao, "SELECT * FROM tbl_alunos");
 $dados_alunos = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
@@ -42,7 +42,10 @@ foreach($dados_alunos as $aluno){
                 <td>".$aluno['data_nascimento']."</td>
                 <td>".$aluno['genero']."</td>
                 <td>".$aluno['situacao']."</td>
-                <td><i class='fa-solid fa-trash'></i><i class='fa-solid fa-pencil'></i></td>
+                <td>
+                <a href='excluir-aluno.php?id=".$aluno['cod_aluno']."'><i class='fa-solid fa-trash'></i></a>
+                <a href='editar-aluno.php?id=".$aluno['cod_aluno']."'><i class='fa-solid fa-pencil'></i></a>
+                </td>
             </tr>
        
         ";

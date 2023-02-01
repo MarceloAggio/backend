@@ -1,6 +1,6 @@
 <?php
 
-include_once("aula07.php");
+include_once("conexao.php");
 include_once("consultar-aluno.php");
 
 $nome = $_POST["nome"];

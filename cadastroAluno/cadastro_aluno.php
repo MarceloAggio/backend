@@ -9,6 +9,7 @@
 <body>
     
     <form action="cadastrar-aluno.php" method="POST">
+        <input type="hidden" name="cod_aluno" value="<?=$id?>">
         <input type="text" name="nome" placeholder="nome">
         <input type="text" name="sobrenome" placeholder="sobrenome">
         <input type="date" name="data-nas" placeholder="DD/MM/AAAA">

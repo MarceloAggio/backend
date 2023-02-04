@@ -10,7 +10,7 @@
 
 <a href="index.php">Voltar</a>
     
-    <form action="inserir-categoria.php" method="POST">
+    <form action="categorias/inserir-categoria.php" method="POST">
         <input type="text" name="nome-categoria" placeholder="nome-categoria">
         <input type="text" name="img-categoria" placeholder="img-categoria">
         <input type="text" name="slug-categoria" placeholder="slug-categoria">

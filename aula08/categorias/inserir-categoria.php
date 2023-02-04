@@ -1,6 +1,6 @@
 <?php
 
-include_once("config/conexao.php");
+include_once("../config/conexao.php");
 
 $nome_cat = $_POST["nome-categoria"];
 $img_cat = $_POST["img-categoria"];

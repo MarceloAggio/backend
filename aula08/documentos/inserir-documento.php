@@ -1,14 +1,35 @@
 <?php
 include_once("../config/conexao.php");
 
-$tipoDocumento = $_POST["tipoDocumento"];
-$documento = $_POST["documento"];
+if($_POST){
 
-$query = "INSERT INTO tbl_docs(id_tipo_documento, documento) VALUES ('$tipoDocumento', '$documento')";
-$inserir_documento = mysqli_query($conexao, $query);
+$id = $_POST["id"];
+$cpf = $_POST["cpf"];
+$rg = $_POST["rg"];
+$email = $_POST["email"];
+$celular = $_POST["celular"];
 
-if($inserir_documento){
-    echo "Documento cadastrado com Sucesso";
+$queryDocs = "INSERT INTO tbl_docs(documento, id_tipo_documento) VALUES ('$id', '$cpf', '), ('$id', '$rg', 2)";
+$inserirDocs = mysqli_query($conexao, $queryDocs)
+
+if($inserirDocs){
+    $queryEmail = "INSERT INTO tbl_contatos_emails(id_usuario, email) VALUES ('$id', '$email')";
+    $inserirEmail = mysqli_query($conexao, $queryEmail);
+
+    if($inserirEmail){
+        $queryTelefone = "INSERT INTO tbl_contatos(id_usuario, numero) VALUES ('$id', '$celular')";
+        $inserirTelefone = mysqli_query($conexao, $queryTelefone);
+        
+    }if($inserirTelefone){
+        header("location: ../index.php");
+    }else{
+        header("location: completar-cadastro.php?client="$id);
+    }
+
 }else{
-    echo "Falha ao cadastrar documento";
+
+}
+
+}else{
+    header("location: cadastro.php");
 }

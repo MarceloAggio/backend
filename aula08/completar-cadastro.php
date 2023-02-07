@@ -8,9 +8,8 @@
 </head>
 <body>
     
-    <form action="documentos/inserir-documento.php" method="POST">
-        <input type="text" name="tipoDocumento" placeholder="Tipo de Documento">
-        <input type="text" name="documento" placeholder="Documento">
+    <form action="documentos/completar-cadastro.php" method="POST">
+        <input type="text" name=''>
 
         <button>Cadastrar</button>
     </form>

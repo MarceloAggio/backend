@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tito's Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 
     <style>
         header, main{
@@ -37,13 +39,16 @@
         img{
             width: 20%;
         }
+        .categorias h4{
+            padding: 0 20px;
+        }
     </style>
 
 </head>
 <body>
     
     <header>
-        <nav>
+        <nav class="d-flex justify-content-center align-items-center">
             <ul>
                 <a href=""><li>Home</li></a>
                 <a href=""><li><i class="fa-solid fa-circle-user"></i></li></a>
@@ -55,9 +60,10 @@
     <hr>
     
     <main>
+        <h1 class="text-center">Categorias</h1>
 <!--------------------------------------------------->
 
-        <div id="categorias">
+        <div id="categorias" class="categorias d-flex">
             <?php
                 include_once("includes/vitrine-categoria.php");
             ?>

@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <a href="cadastra-categoria.php">Cadastro de Categoria</a>
+    <a href="gestao-categoria.php">Cadastro de Categoria</a>
 
 </body>
 </html>

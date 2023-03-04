@@ -63,14 +63,6 @@
         <label for="newsletter" class="form-label">Newsletters:</label>
         <input type="text" name="newsletter" placeholder="Deseja Receber as Newsletters?" class="form-control">
     </div>
-    <div class="col-md-3">
-        <label for="numero" class="form-label">Numero:</label>
-        <input type="number" name="numero" placeholder="Digite seu numero" class="form-control">
-    </div>
-    <div class="col-md-5">
-        <label for="email" class="form-label">E-mail:</label>
-        <input type="email" name="email" placeholder="Digite seu E-mail" class="form-control">
-    </div>
     </div>
 
     <div class="d-flex justify-content-center mt-3">

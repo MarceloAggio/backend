@@ -57,6 +57,8 @@
             
             <h3>Não tem Cadrastro?</h3>
             <a href="cadastra-cliente.php">*Cadastrar-se*</a>
+            <br>
+            <a href="cadastra-parceiro.php">*Virar Parceiro*</a>
         </form>
     </div>
 </section>

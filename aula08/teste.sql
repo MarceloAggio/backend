@@ -1,3 +1,4 @@
+
 select avg(renda) as media_salarial from aula08.tbl_clientes;
 
 select round(avg(renda)) as media_salarial from aula08.tbl_clientes;

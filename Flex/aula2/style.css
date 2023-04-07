@@ -1,0 +1,24 @@
+body{
+    background-color: grey;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+.item{
+    flex:1 1 10%;
+    margin: 5px 1px;
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    background-color: purple;
+}
+.basis{
+    flex-basis: 100%;
+}

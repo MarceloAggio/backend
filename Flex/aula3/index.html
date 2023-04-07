@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Display flex</title>
+</head>
+<body>
+    
+    <h1>display: block;</h1>
+<section class="container">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>display: flex;</h1>
+<section class="container flex">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>display: flex;</h1>
+<section class="container flex">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2</div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+	<div class="item">Teste 5</div>
+	<div class="item">Teste 6</div>
+	<div class="item">Teste 7</div>
+</section>
+
+<h1>display: flex;</h1>
+<section class="container flex flex-wrap">
+	<div class="item">Teste 1</div>
+	<div class="item">Teste 2</div>
+	<div class="item">Teste 3</div>
+	<div class="item">Teste 4</div>
+	<div class="item">Teste 5</div>
+	<div class="item">Teste 6</div>
+	<div class="item">Teste 7</div>
+</section>
+
+<h1>flex-direction: row;</h1>
+<section class="container row">
+	<div class="item flex-item-1">Teste 1</div>
+	<div class="item flex-item-1">Teste 2</div>
+	<div class="item flex-item-1">Teste 3</div>
+</section>
+
+<h1>flex-direction: row-reverse;</h1>
+<section class="container row-reverse">
+	<div class="item flex-item-1">Teste 1</div>
+	<div class="item flex-item-1">Teste 2</div>
+	<div class="item flex-item-1">Teste 3</div>
+</section>
+
+<h1>flex-direction: colomn;</h1>
+<section class="container colomn">
+	<div class="item flex-item-1">Teste 1</div>
+	<div class="item flex-item-1">Teste 2</div>
+	<div class="item flex-item-1">Teste 3</div>
+</section>
+
+<h1>flex-direction: colomn-reverse;</h1>
+<section class="container flexDirection">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<h1>flex-wrap: nowrap;</h1>
+<section class="container nowrap">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<h1>flex-wrap: wrap;</h1>
+<section class="container wrap">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<h1>flex-wrap: wrap-reverse;</h1>
+<section class="container wrap-reverse">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<style>
+	.flex-start{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.flex-end{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.space-between{
+		display: flex;
+		justify-content: space-between;
+	}
+	.space-around{
+		display: flex;
+		justify-content: space-around;
+	}
+</style>
+
+<h1>justify-content: flex-start;</h1>
+<section class="container flex-start">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+	<div class="item flex-item-2">Teste 4</div>
+</section>
+
+<h1>justify-content: flex-end;</h1>
+<section class="container flex-end">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<h1>justify-content: space-between;</h1>
+<section class="container space-between">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<h1>justify-content: space-around;</h1>
+<section class="container space-around">
+	<div class="item flex-item-2">Teste 1</div>
+	<div class="item flex-item-2">Teste 2</div>
+	<div class="item flex-item-2">Teste 3</div>
+</section>
+
+<style>
+    .teste{
+        background-color: black;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .box{
+		text-align: center;
+		font-size: 64px;
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+</style>
+<div class="teste">
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+</div>
+</body>
+</html>

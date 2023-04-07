@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(148, 29, 29);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+li {
+    font-size: 26px;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+nav ul li:hover {
+    color: black;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+nav ul li:not(:hover) {
+    transition: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 2.7% 50px;
+    color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(197, 37, 37);
+}
+
+h3 {
+    text-transform: uppercase;
+    color: grey;
+}
+
+.cards {
+    width: 80%;
+    height: 65rem;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+    width: 95%;
+    padding-left: 2.5%;
+}
+
+.card {
+    height: 50px;
+}
+
+p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.legenda {
+    text-align: center;
+}
+
+.rodape {
+    background-color: brown;
+    height: 80px;
+}
+
+.rodape p {
+    text-align: center;
+    color: white;
+}

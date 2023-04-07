@@ -1,0 +1,71 @@
+/* Flex display: flex;
+Torna o elemento um flex container 
+automaticamente transformando todos os seus filhos diretos em flex itens.*/
+
+/*display
+Define o elemento como um flex container, tornando os seus filhos flex-itens*/
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+.flexDirection{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.colomn{
+	display: flex;
+	flex-direction: column;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+
+}
+.row-reverse{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.nowrap{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.wrap-reverse{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: orange;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}

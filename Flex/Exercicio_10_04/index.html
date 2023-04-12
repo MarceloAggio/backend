@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,17 @@
     <title>Document</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        i{
+
+        i {
             font-size: 28px;
             cursor: pointer;
         }
-        header nav{
+
+        header nav {
             width: 100%;
             height: 60px;
             background-color: grey;
@@ -23,64 +26,155 @@
             justify-content: space-around;
             align-items: center;
         }
-        nav i{
+
+        nav i {
             padding: 0 5px;
         }
-        .pesquisa{
+
+        .pesquisa {
             width: 80%;
             height: 20px;
             border-radius: 5px;
             border: 1px solid black;
         }
-        .main{
+
+        .main {
             display: flex;
             flex-direction: column;
         }
-        .coluna{
+
+        .coluna {
             width: 100%;
             background-color: rgb(88, 88, 88);
-            margin: 0 0 10px;
+            padding: 0 0 80px;
         }
-        .nav{
+
+        .nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 50px;
         }
-        .check{
+
+        .checker {
+            width: 20px;
+            height: 20px;
+        }
+
+        .check {
             display: flex;
             justify-content: space-around;
-            width: 20%;
+            width: 10%;
         }
-        .boxes{
-            width: 80%;
+
+        .boxes {
+            width: 75%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
         }
-        ul li{
+
+        ul li, .btn1 {
             display: inline-block;
-            margin: 0 8px;
+            text-align: center;
+            width: 115px;
+            height: 25px;
+            background-color: grey;
+            padding-top: 1%;
         }
-        .btnNav{
+
+        .btn1 {
+            height: 35px;
+            padding-bottom: 1%;
+        }
+
+        .btnNav {
             margin: 0 10px;
         }
-        .col-2 h1{
+
+        .col-2 h1 {
+            font-size: 68px;
+            color: white;
             text-align: center;
         }
-        .search{
+
+        .col-2 {
+            text-align: center;
+        }
+
+        .search {
+            margin-top: 15px;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .search i{
-            padding: 5px 10px;
+
+        .search i {
+            padding: 5px 10px 0 0;
+            font-size: 25px;
+            color: white;
+        }
+
+        .barra {
+            border-radius: 8px;
+            width: 40%;
+            height: 30px;
+        }
+
+        .lupaSearch {
+
+            width: 150px;
+            height: 35px;
+            background-color: black;
+        }
+
+        .col-3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icons {
+            font-size: 20px;
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .icons i{
+            padding: 10px 20px;
+            font-size: 38px;
+        }
+        .icons p{
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+        .data{
+            background-color: rgb(66, 65, 65);
+            color: white;
+            margin: 0 auto;
+            width: 95%;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .data input ,select{
+            width: 20%;
+            height: 30px;
+        }
+        .agenda{
+            width: 100%;
+            background-color: rgb(66, 65, 65);
+        }
+        .btn-data{
+            width: 10%;
         }
     </style>
 
 </head>
+
 <body>
-    
+
     <header>
         <nav>
             <div class="setas">
@@ -99,7 +193,7 @@
         <div class="coluna nav">
 
             <div class="check">
-                <input type="checkbox">
+                <input type="checkbox" class="checker">
                 <h3>Restaurante</h3>
             </div>
 
@@ -113,7 +207,7 @@
                     <li>FAQs</li>
                     <li>Account</li>
 
-                    <button class="btnNav">Contact now</button>
+                    <button class="btnNav btn1">Contact now</button>
                 </ul>
             </div>
 
@@ -122,16 +216,51 @@
         <div class="coluna col-2">
             <h1>Organic Foods Made <br> Easy & Healthy</h1>
             <div class="search">
-                <input type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="barra" placeholder="search your food here">
+                <div class="lupaSearch"><i class="fa-solid fa-magnifying-glass">Search</i></div>
             </div>
         </div>
 
-        <div class="coluna">
-            agags
+        <div class="coluna col-3">
+            <div class="icons">
+                <p><i class="fa-regular fa-clock"></i><br> 24/7 Fresh Food</p>
+                <p><i class="fa-brands fa-pagelines"></i><br> Nature First</p>
+                <p><i class="fa-regular fa-house"></i><br> Home Services</p>
+                <p><i class="fa-regular fa-truck fa-flip-horizontal"></i><br> Free Delivery</p>
+            </div>
         </div>
     </main>
 
+    <hr>
+
+    <section class="agenda">
+    <div class="data">
+        <h3>Book a Table:</h3>
+        <input type="date" class="date">
+        <select name="" id="" class="time">
+            <option value="">---Select Time</option>
+            <option value="">20:00</option>
+            <option value="">21:00</option>
+            <option value="">22:00</option>
+            <option value="">23:00</option>
+        </select>
+        <select name="" id="" class="people">
+            <option value="">---Select Peoples</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">Mais</option>
+        </select>
+        <button class="btn-data">Book Now</button>
+    </div>
+    </section>
+
+
+
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

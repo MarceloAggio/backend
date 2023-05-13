@@ -1,0 +1,8 @@
+CREATE DATABASE livrariaTito;
+
+CREATE TABLE tbl_livros();
+
+
+USE livrariatito;
+SELECT * FROM livros;
+

@@ -73,13 +73,13 @@
 		<h1>Cadastro de Usuários</h1>
 		<form action="inserir.php" method="POST">
 			<label for="name">Nome:</label>
-			<input type="text" id="name" name="name">
+			<input type="text" id="name" name="nome">
 
 			<label for="email">Email:</label>
 			<input type="email" id="email" name="email">
 
 			<label for="password">Senha:</label>
-			<input type="password" id="password" name="password">
+			<input type="password" id="password" name="senha">
 
 			<input type="submit" value="submit">
 		</form>

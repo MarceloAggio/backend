@@ -13,7 +13,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
         $senha = $conexao->real_escape_string($_POST['senha']);
 
         $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-        $sql_query = $mysql ->query($sql_code) or die ("falha na execução".$conexao->error);
+        $sql_query = $conexao ->query($sql_code) or die ("falha na execução".$conexao->error);
 
         $quantidade = $sql_query->num_rows;
 

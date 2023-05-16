@@ -4,7 +4,7 @@ include_once("../conexao.php");
 
 
 
-if($_POST['submit']){
+if($_POST){
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];

@@ -1,28 +1,48 @@
-<?php
+<?php 
 
-class Funcionario
-
-{
-    var $codigo;
-    var $nome;
-    var $salario = "8.500";
-    var $departamento = "tecnologia";
-
-    function setSalario()
+    class Funcionario
+    
     {
-
+        var $codigo;
+        var $nome;
+        var $salario = "8.500";
+        var $departamento = "tecnologia";
+    
+        function setSalario()
+        {
+        
+        }
+    
+        function getSalario()
+        {
+            
+        }
+    
     }
-
-    function getSalario()
-    {
+    
+    $jose = new Funcionario;  // o novo objeto é JOSE, não funcionario (funcionario é somente uma classe)
+    $jose->codigo = 44;
+    $jose->nome = "Jose da Silva";
+    $jose->salario +=100;
+    $jose->departamento = "Financeiro";
+    print_r(get_object_vars($jose));
+    
+    
+    
+    
+    class Aluno{
+    
+        var $nome;
+    
+        function media() {
+        
+        
+        }
+    
         
     }
-
-}
-
-$jose = new Funcionario;  // o novo objeto é JOSE, não funcionario (funcionario é somente uma classe)
-$jose->codigo = 44;
-$jose->nome = "Jose da Silva";
-$jose->salario +=100;
-$jose->departamento = "Financeiro";
-print_r(get_object_vars($jose));
+    
+    
+    $marcelo = new Aluno;
+    $marcelo->nome = "Marcelo Aggio";
+    print_r(get_object_vars($marcelo));
